@@ -11,6 +11,14 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('admin') // website.com/admin 
+    ->namespace('Admin') // nama folder Controllers
+    ->group(function () {
+        Route::get('/', 'DashboardController@index')->name('dashboard');
+    });
