@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbar Travel</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+    <!-- xzoom -->
+    <link rel="stylesheet" href="libraries/xzoom/xzoom.css" />
+    <!-- Gjigo -->
+    <link rel="stylesheet" href="libraries/gjigo/css/gijgo.min.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo_barbar.png" alt="Logo barbar">
+          </a>
+        </div>
+        <ul class="navbar-nav mr-auto d-none d-lg-block">
+          <li>
+            <span class="text-muted">
+              | &nbsp; Beyond the explore the world.
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navigasi Ends -->
+
+    <!-- header -->
+    <main>
+      <section class="section-details-header"></section>
+      <section class="section-details-content">
+        <div class="container">
+          <div class="row">
+            <div class="col p-0">
+              <!-- breadcrumb -->
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Paket Travel</li>
+                  <li class="breadcrumb-item">Details</li>
+                  <li class="breadcrumb-item active">Checkout</li>
+                </ol>
+              </nav>
+              <!-- breadcrumb ends -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 pl-lg-0">
+              <div class="card card-details">
+                <h1>Who is going?</h1>
+                <p>Trip to Danau Toba, Indonesia</p>
+                <div class="join-trip">
+                  <table class="table table-responsive-sm text-center">
+                    <thead>
+                      <tr>
+                        <td>Picture</td>
+                        <td>Name</td>
+                        <td>Nationality</td>
+                        <td>Visa</td>
+                        <td>Passport</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src="images/checkout/ck_member_1.png" alt="">
+                        </td>
+                        <td class="align-middle">Ryan Pranata</td>
+                        <td class="align-middle">CN</td>
+                        <td class="align-middle">N/A</td>
+                        <td class="align-middle">Active</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <img src="images/checkout/Icon material-close.png" alt="">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="images/checkout/ck_member_2.png" alt="">
+                        </td>
+                        <td class="align-middle">Rina</td>
+                        <td class="align-middle">SG</td>
+                        <td class="align-middle">30 Days</td>
+                        <td class="align-middle">Active</td>
+                        <td class="align-middle">
+                          <a href="#">
+                            <img src="images/checkout/Icon material-close.png" alt="">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="member mt-4">
+                  <h2>Add Member</h2>
+                  <form action="" class="form-inline">
+                    <label for="inputUsername" class="sr-only">
+                      Name
+                    </label>
+                    <input type="text" name="inputUsername" class="form-control mb-2 mr-sm-2" id="inputUsername" placeholder="Username">
+  
+                    <label for="inputVisa" class="sr-only">VISA</label>
+                    <select name="inputVisa" id="inputVisa" class="custom-select mb-2 mr-sm-2">
+                      <option value="VISA" selected>VISA</option>
+                      <option value="30 Days">30 Days</option>
+                      <option value="N/A">N/A</option>
+                    </select>
+  
+                    <label for="doePassport" class="sr-only">DOE Passport</label>
+                    <div class="input-group-btn mb-2 mr-sm-2">
+                      <input type="text" class="form-control datepicker" id="doePassport" placeholder="DOE Passport">
+                    </div>
+  
+                    <button type="submit" class="btn btn-add-now mb-2 px-4">Add Now</button>
+                  </form>
+  
+                  <h3 class="mt-2 mb-0">Note</h3>
+                  <p class="disclaimer mb-0">
+                    You are only able to invite member that has registered in Barbar   
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-details card-right">
+                <h2>Checkout Information</h2>
+                <table class="trip-information">
+                  <tr>
+                    <th width="50%">Members</th>
+                    <td width="50%" class="text-right">2 Person</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Additional VISA</th></th>
+                    <td width="50%" class="text-right">$190,00</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Trip Price</th>
+                    <td width="50%" class="text-right">$80,00/person</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total Price</th>
+                    <td width="50%" class="text-right">$280,00</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Total (+Unique)</th>
+                    <td width="50%" class="text-right text-total">
+                      <span class="text-blue">$279,</span>
+                      <span class="text-orange">33</span>
+                    </td>
+                  </tr>
+                </table>
+                <hr />
+                <h2>Payment Instruction</h2>
+                <p class="payment-instruction">
+                  Please complete payment before you continue the wonderful trip
+                </p>
+                <div class="bank">
+                  <div class="bank-item pb-3">
+                    <img src="images/checkout/ic_bank.png" class="bank-image" alt="">
+                    <div class="description">
+                      <h3>PT Barbar Travel</h3>
+                      <p>
+                        0922 2211 3332
+                        <br>
+                        Bank Central Asia
+                      </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="join-container">
+                <a href="success.html" class="btn btn-block btn-join-now mt-3 py-2">I Have Made Payment</a>
+              </div>
+              <div class="text-center mt-3">
+                <a href="details.html" class="text-muted">
+                  Cancel Booking
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- header ends -->
+
+    <!-- Footer -->
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <h5>FEATURE</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Social Media</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>ACCOUNT</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Rewards</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Yogyakarta</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821-3333-2222</a></li>
+                  <li><a href="#">support@barbar.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
+          <div class="col-auto text-gray-500 font-weight-light">
+            2021 Copyright Barbar Travel. All Right Reserved. Yogyakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <script src="libraries/jquery/jquery-3.4.1.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/retina/retina.min.js"></script>
+    <script src="libraries/xzoom/xzoom.min.js"></script>
+    <script src="libraries/gjigo/js/gijgo.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 15,
+        });
+
+        $(".datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>

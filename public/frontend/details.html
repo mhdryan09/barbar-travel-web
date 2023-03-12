@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbar Travel</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+    <!-- xzoom -->
+    <link rel="stylesheet" href="libraries/xzoom/xzoom.css" />
+    <!-- My Style -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo_barbar.png" alt="logo Barbar" />
+        </a>
+        <!-- toggle -->
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- link/menu navigasi -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md 2">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item mx-md 2">
+              <a href="#" class="nav-link">Travel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                Services
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link 1</a>
+                <a href="#" class="dropdown-item">Link 2</a>
+                <a href="#" class="dropdown-item">Link 3</a>
+              </div>
+            </li>
+
+            <li class="nav-item mx-md 2">
+              <a href="#" class="nav-link">Testimonial</a>
+            </li>
+          </ul>
+          <!-- Mobile Button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0">Masuk</button>
+          </form>
+
+          <!-- Desktop Button -->
+          <form class="form-inline d-md-block d-none my-2 my-lg-0">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Masuk</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!-- Navigasi Ends -->
+
+    <!-- header -->
+    <section class="section-details-header"></section>
+    <section class="section-details-content">
+      <div class="container">
+        <div class="row">
+          <div class="col p-0">
+            <!-- breadcrumb -->
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">Paket Travel</li>
+                <li class="breadcrumb-item active">Details</li>
+              </ol>
+            </nav>
+            <!-- breadcrumb ends -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 pl-lg-0">
+            <div class="card card-details">
+              <h1>Nusa Penida</h1>
+              <p>Republic of Indonesia Raya</p>
+              <!-- Gallery -->
+              <div class="gallery">
+                <div class="xzoom-container">
+                  <img
+                    src="images/gallery/gallery-utama.jpg"
+                    class="xzoom"
+                    id="xzoom-default"
+                    xoriginal="images/gallery/gallery-utama.jpg"
+                  />
+                </div>
+                <div class="xzoom-thumbs">
+                  <a href="images/gallery/gallery-utama.jpg">
+                    <img
+                      src="images/gallery/gallery-utama.jpg"
+                      class="xzoom-gallery"
+                      width="128"
+                      height="80"
+                      xpreview="images/gallery/gallery-utama.jpg"
+                    />
+                  </a>
+                  <a href="images/gallery/thumbs/pic_2.jpg">
+                    <img
+                      src="images/gallery/gambar2.jpg"
+                      class="xzoom-gallery"
+                      width="128"
+                      height="80"
+                      xpreview="images/gallery/gambar2.jpg"
+                    />
+                  </a>
+                  <a href="images/gallery/thumbs/pic_3.jpg">
+                    <img
+                      src="images/gallery/thumbs/pic_3.jpg"
+                      class="xzoom-gallery"
+                      width="128"
+                      height="80"
+                      xpreview="images/gallery/gambar3.jpg"
+                    />
+                  </a>
+                  <a href="images/gallery/thumbs/pic_4.jpg">
+                    <img
+                      src="images/gallery/thumbs/pic_4.jpg"
+                      class="xzoom-gallery"
+                      width="128"
+                      height="80"
+                      xpreview="images/gallery/gambar4.jpg"
+                    />
+                  </a>
+                  <a href="images/gallery/gallery-utama.jpg">
+                    <img
+                      src="images/gallery/gallery-utama.jpg"
+                      class="xzoom-gallery"
+                      width="128"
+                      xpreview="images/gallery/gallery-utama.jpg"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- Gallery Ends -->
+              <h2>Tentang Wisata</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus error odit sequi,
+                corporis doloremque nisi itaque quos. Atque delectus non laborum ut laboriosam autem
+                perspiciatis in aut a facilis commodi porro consequuntur, dicta adipisci. Ipsum
+                velit debitis ex obcaecati esse?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum mollitia officia eaque,
+                nihil consectetur enim sequi ratione sint sunt quibusdam.
+              </p>
+              <div class="row features">
+                <div class="col-md-4">
+                  <img src="images/icon/ic_event.png" alt="" / class="features-image">
+                  <div class="description">
+                    <h3>Feature Event</h3>
+                    <p>Tari Kecak</p>
+                  </div>
+                </div>
+                <div class="col-md-4 border-left">
+                  <img src="images/icon/ic_language.png" alt="" / class="features-image">
+                  <div class="description">
+                    <h3>Language</h3>
+                    <p>Bahasa Indonesia</p>
+                  </div>
+                </div>
+                <div class="col-md-4 border-left">
+                  <img src="images/icon/ic_food.png" alt="" / class="features-image">
+                  <div class="description">
+                    <h3>Foods</h3>
+                    <p>Local Food</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-details card-right">
+              <h2>Members are going</h2>
+              <div class="members my-2">
+                <img src="images/members/member_1.png" alt="" class="member-image mr-1">
+                <img src="images/members/member_2.png" alt="" class="member-image mr-1">
+                <img src="images/members/member_3.png" alt="" class="member-image mr-1">
+                <img src="images/members/member_4.png" alt="" class="member-image mr-1">
+                <img src="images/members/member_lain.png" alt="" class="member-image mr-1">
+              </div>
+              <hr />
+              <h2>Trip Information</h2>
+              <table class="trip-information">
+                <tr>
+                  <th width="50%">Date of Departure</th>
+                  <td width="50%" class="text-right">22 Aug, 2021</td>
+                </tr>
+                <tr>
+                  <th width="50%">Duration</th></th>
+                  <td width="50%" class="text-right">4D 3N</td>
+                </tr>
+                <tr>
+                  <th width="50%">Type</th>
+                  <td width="50%" class="text-right">Open Trip</td>
+                </tr>
+                <tr>
+                  <th width="50%">Price</th>
+                  <td width="50%" class="text-right">$80,00 / person</td>
+                </tr>
+              </table>
+            </div>
+            <div class="join-container">
+              <a href="checkout.html" class="btn btn-block btn-join-now mt-3 py-2">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header ends -->
+
+    <!-- Footer -->
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <h5>FEATURE</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Social Media</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>ACCOUNT</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Rewards</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>COMPANY</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Media</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-3">
+                <h5>GET CONNECTED</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Yogyakarta</a></li>
+                  <li><a href="#">Indonesia</a></li>
+                  <li><a href="#">0821-3333-2222</a></li>
+                  <li><a href="#">support@barbar.id</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
+          <div class="col-auto text-gray-500 font-weight-light">
+            2021 Copyright Barbar Travel. All Right Reserved. Yogyakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <script src="libraries/jquery/jquery-3.4.1.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/retina/retina.min.js"></script>
+    <script src="libraries/xzoom/xzoom.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          Xoffset: 15,
+        });
+      });
+    </script>
+  </body>
+</html>
