@@ -26,7 +26,12 @@ Route::prefix('admin') // website.com/admin
     ->namespace('Admin') // nama folder Controllers
     ->middleware(['auth', 'admin']) // middelware => satpam
     ->group(function () {
+
+        // panggil halaman dashboard
         Route::get('/', 'DashboardController@index')->name('dashboard');
+
+        // panggil halaman travel-package.index
+        Route::resource('travel-package', 'TravelPackageController');
     });
 
 Auth::routes(['verify' => true]);
