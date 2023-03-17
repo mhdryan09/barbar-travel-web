@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="row navbar navbar-expand-lg navbar-light bg-white">
             <a href="#" class="navbar-brand">
-                <img src="frontend/images/logo_barbar.png" alt="logo Barbar" />
+                <img src="{{ url('frontend/images/logo_barbar.png') }}" alt="logo Barbar" />
             </a>
             <!-- toggle -->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">

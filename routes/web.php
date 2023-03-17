@@ -21,7 +21,7 @@ Route::get('/detail/{slug}', 'DetailController@index')->name('detail');
 
 // routing untuk proses checkout
 Route::post('/checkout/{id}', 'CheckoutController@process')
-    ->name('checkout_process')
+    ->name('checkout-process')
     ->middleware(['auth', 'verified']);
 
 // routing halaman checkout, id disini adalah id transaction
@@ -40,7 +40,7 @@ Route::get('/checkout/remove/{detail_id}', 'CheckoutController@remove')
     ->middleware(['auth', 'verified']);
 
 // routing untuk konfirmasi sukses
-Route::get('/checkout/confirm/{id}', 'CheckoutController@succes')
+Route::get('/checkout/confirm/{id}', 'CheckoutController@success')
     ->name('checkout-success')
     ->middleware(['auth', 'verified']);
 
