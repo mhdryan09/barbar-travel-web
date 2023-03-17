@@ -30,8 +30,11 @@ Route::prefix('admin') // website.com/admin
         // panggil halaman dashboard
         Route::get('/', 'DashboardController@index')->name('dashboard');
 
-        // panggil halaman travel-package.index
+        // panggil TravelController
         Route::resource('travel-package', 'TravelPackageController');
+
+        // panggil GalleryController
+        Route::resource('gallery', 'GalleryController');
     });
 
 Auth::routes(['verify' => true]);

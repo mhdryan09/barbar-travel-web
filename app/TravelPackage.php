@@ -16,4 +16,11 @@ class TravelPackage extends Model
     ];
 
     protected $hidden = [];
+
+    // relasi dgn tabel galleries
+    public function galleries()
+    {
+        // 1 paket travel punya banyak gambar
+        return $this->hasMany(Gallery::class, 'travel_packages_id', 'id');
+    }
 }

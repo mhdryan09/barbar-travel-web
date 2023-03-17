@@ -36,9 +36,7 @@
                     </div>
                     <div class="form-group">
                         <label for="about">About</label>
-                        <textarea name="about" rows="10" class="d-block w-100 form-control">
-                          {{ $item->about }}
-                      </textarea>
+                        <textarea name="about" class="d-block w-100 form-control">{{ $item->about }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="featured_event">Feature Event</label>
