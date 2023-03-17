@@ -35,6 +35,9 @@ Route::prefix('admin') // website.com/admin
 
         // panggil GalleryController
         Route::resource('gallery', 'GalleryController');
+
+        // panggil TransactionController
+        Route::resource('transaction', 'TransactionController');
     });
 
 Auth::routes(['verify' => true]);
