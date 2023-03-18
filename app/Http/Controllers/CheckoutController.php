@@ -9,6 +9,8 @@ use App\TransactionDetail;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Traversable;
+use Mail;
+use App\Mail\TransactionSuccess;
 
 class CheckoutController extends Controller
 {
@@ -99,14 +101,23 @@ class CheckoutController extends Controller
 
     public function success(Request $request, $id)
     {
-        // ambil id dari tabel transction_details
-        $transaction = Transaction::findOrFail($id);
+        // relasi ke tabel berikut
+        // dan ambil id dari tabel transction_details
+        $transaction = Transaction::with(['details', 'travel_package.galleries', 'user'])
+            ->findOrFail($id);
 
         // update transaction_status
         $transaction->transaction_status = 'PENDING';
 
         // simpan data
         $transaction->save();
+
+        // return $transaction;
+
+        // kirim email data e-tiket ke user
+        Mail::to($transaction->user)->send(
+            new TransactionSuccess($transaction)
+        );
 
         // arahkan ke halaman success,
         return view('pages.success');
